@@ -16,8 +16,8 @@
         $sql_insert = "INSERT INTO slambook (id,name, data) 
                    VALUES (?,?)";
        $stmt = $conn->prepare($sql_insert);
-        $stmt->bindValue(2, "test");
-		$stmt->bindValue(3, "testhkbkb");
+        $stmt->bindValue(1, "test");
+		$stmt->bindValue(2, "testhkbkb");
         $stmt->execute();
     }
     catch(Exception $e)
