@@ -14,9 +14,8 @@
 	  try 
 	{
         $sql_insert = "INSERT INTO slambook (id,name, data) 
-                   VALUES (?,?,?)";
+                   VALUES (?,?)";
        $stmt = $conn->prepare($sql_insert);
-        $stmt->bindValue(1, 2);
         $stmt->bindValue(2, "test");
 		$stmt->bindValue(3, "testhkbkb");
         $stmt->execute();
