@@ -3,7 +3,7 @@
 	
     try 
 	{
-        $conn = new PDO( "ukqpx79ecp.database.windows.net,1433; Database = niteesh", "niteesh", "n!teesh558");
+        $conn = new PDO( "sqlsrv:server = tcp:ukqpx79ecp.database.windows.net,1433;Database = niteesh", "niteesh", "n!teesh558");
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 		
     }
