@@ -13,10 +13,11 @@
     }
 	  try 
 	{
-        $sql_insert = "select * from slambook";
-        //$stmt = $conn->prepare($sql_insert);
-        //$stmt->bindValue(1, "niteesh");
-        //$stmt->bindValue(2, "good");
+        $sql_insert = "INSERT INTO slambook (name, data) 
+                   VALUES (?,?)";
+       $stmt = $conn->prepare($sql_insert);
+        $stmt->bindValue(1, "test");
+        $stmt->bindValue(2, "score");
         $stmt->execute();
     }
     catch(Exception $e)
