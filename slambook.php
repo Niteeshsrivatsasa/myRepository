@@ -13,7 +13,7 @@
     }
 	  try 
 	{
-        $sql_insert = "INSERT INTO slambook (id,name, data) 
+        $sql_insert = "INSERT INTO slambook (name, data) 
                    VALUES (?,?)";
        $stmt = $conn->prepare($sql_insert);
         $stmt->bindValue(1, "test");
