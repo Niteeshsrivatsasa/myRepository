@@ -1,6 +1,6 @@
 <?php
  
-	$host = "us-cdbr-azure-east-b.cloudapp.net";
+	$host = " ukqpx79ecp.database.windows.net";
     $user = "niteesh";
     $pwd = "n!teesh558";
     $db = "niteesh";
