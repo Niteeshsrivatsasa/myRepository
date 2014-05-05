@@ -1,12 +1,9 @@
 <?php
  
-	$host = " ukqpx79ecp.database.windows.net";
-    $user = "niteesh";
-    $pwd = "n!teesh558";
-    $db = "niteesh";
+	
     try 
 	{
-        $conn = new PDO( "mysql:host=$host;dbname=$db", $user, $pwd);
+        $conn = new PDO( "ukqpx79ecp.database.windows.net,1433; Database = niteesh", "niteesh", "n!teesh558");
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 		
     }
