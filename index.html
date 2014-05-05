@@ -71,20 +71,18 @@
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
       console.log('Good to see you, ' + response.name + '.');
+	  window.localStorage.setItem("name",response.name);
+	  window.localStorage.setItem("name",response.id);
     });
   }
 </script>
 
-<!--
-  Below we include the Login Button social plugin. This button uses the JavaScript SDK to
-  present a graphical Login button that triggers the FB.login() function when clicked. -->
 
-<fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
     <div class="jumbotron">
       <div class="container">
         <h1>Hello, world!</h1>
         <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Login using Facebook</a></p>
+        <p><a class="btn btn-primary btn-lg" role="button" onClick="FB.login();">Login using Facebook</a></p>
       </div>
     </div>
   
